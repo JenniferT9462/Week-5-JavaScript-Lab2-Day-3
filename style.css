@@ -2,3 +2,24 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: tan;
 }
+button {
+    display: block;
+    margin: auto;
+    background-color: green;
+    color: gold;
+    padding: 18px;
+    font-size: 18px;
+    border: solid 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px;
+    
+}
+h1, h2, p {
+    text-align: center;
+}
+h1 {
+    color: green;
+}
+p {
+    font-size: 24px;
+}
