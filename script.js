@@ -11,7 +11,7 @@ function startQuest() {
     }else if(game.choice1 === "right") {
         gameHeader2.innerHTML = "Game Over";
         gameHeader2.style.color = "red";
-        gameParagraph.innerHTML = "You fell in a hole. Game Over!";
+        gameParagraph.innerHTML = "You fell in a hole. How embarrassing for you!";
         gameParagraph.style.backgroundColor = "black";
         gameParagraph.style.color = "red"
     }
@@ -23,7 +23,7 @@ function startQuest() {
     }else if(game.choice2 === "swim") {
         gameHeader2.innerHTML = "Game Over";
         gameHeader2.style.color = "Navy";
-        gameParagraph.innerHTML = "You were eaten by a shark. Game Over!";
+        gameParagraph.innerHTML = "You were eaten by a shark. Blood everywhere!";
         gameParagraph.style.backgroundColor = "navy";
         gameParagraph.style.color = "red";
     }
