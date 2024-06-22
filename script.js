@@ -13,7 +13,7 @@ function startQuest() {
         gameParagraph.style.color = "red"
     }
     if(game.choice2 === "wait") {
-        game.choice3 = prompt("You find a raft and get to the castle unharmed. Inside the castle there are 3 doors; gold, purple and green doors. Which color do you choose? Type gold, purple or green.");
+        game.choice3 = prompt("You find a raft and get to the castle unharmed. Inside the castle there are 3 doors that are gold, purple and green doors. Which color do you choose? Type gold, purple or green.");
     }else if(game.choice2 === "swim") {
         gameHeader2.innerHTML = "Game Over";
         gameHeader2.style.color = "Navy";
