@@ -50,7 +50,8 @@ startQuestButton.onclick = startQuest;
 
 
 function guessingGame() {
-    let getRandom = Math.floor((Math.random() * 10) + 1);
+    let getRandom = Math.floor(Math.random()*10) + 1;  
+    
    
     let guess = 1;
 
@@ -76,4 +77,4 @@ function guessingGame() {
 }
 guessingGameButton.onclick = guessingGame;
 
- 
+// Math.floor((Math.random() * 10) + 1);
