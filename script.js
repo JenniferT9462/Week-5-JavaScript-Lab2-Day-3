@@ -47,3 +47,27 @@ function startQuest() {
 
 }
 startQuestButton.onclick = startQuest;
+
+
+function guessingGame() {
+    let getRandom = Math.floor(Math.random() * 10) + 1;
+   
+    let guess = 1;
+
+    
+    let number = parseInt(prompt('Guess a number from 1 to 10: '));
+    
+    while (number > getRandom) {
+        number = parseInt(prompt("OOPS Sorry!! try a smaller number"));
+        guess++;
+    }
+    while (number < getRandom) {
+        number = parseInt(prompt("OOPS! Sorry!! Try a greater number"));
+        guess++;
+    }
+    if (number === getRandom) {
+        guessingGameHeader.innerHTML = "You Won!!!";
+        guessingGameParagraph.innerHTML = `You guessed the right number in ${guess} guesses!`;
+    }
+}
+guessingGameButton.onclick = guessingGame;
