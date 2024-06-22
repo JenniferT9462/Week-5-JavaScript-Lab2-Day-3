@@ -50,12 +50,12 @@ startQuestButton.onclick = startQuest;
 
 
 function guessingGame() {
-    let getRandom = Math.floor(Math.random() * 10) + 1;
+    let getRandom = Math.floor((Math.random() * 10) + 1);
    
     let guess = 1;
 
     
-    let number = parseInt(prompt('Guess a number from 1 to 10: '));
+    let number = parseInt(prompt("Guess a number from 1 to 10: "));
     
     while (number > getRandom) {
         number = parseInt(prompt("OOPS Sorry!! try a smaller number"));
@@ -71,3 +71,4 @@ function guessingGame() {
     }
 }
 guessingGameButton.onclick = guessingGame;
+
