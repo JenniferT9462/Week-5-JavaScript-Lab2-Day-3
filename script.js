@@ -56,15 +56,19 @@ function guessingGame() {
 
     
     let number = parseInt(prompt("Guess a number from 1 to 10: "));
+
     
-    while (number > getRandom) {
-        number = parseInt(prompt("OOPS Sorry!! try a smaller number"));
-        guess++;
-    }
-    while (number < getRandom) {
-        number = parseInt(prompt("OOPS! Sorry!! Try a greater number"));
-        guess++;
-    }
+    while (number != getRandom) {
+    
+        if (number > getRandom) {
+            number = parseInt(prompt("OOPS Sorry!! try a smaller number"));
+            guess++;
+        }
+        else if (number < getRandom) {
+            number = parseInt(prompt("OOPS! Sorry!! Try a greater number"));
+            guess++;
+        }
+    } 
     if (number === getRandom) {
         guessingGameHeader.innerHTML = "You Won!!!";
         guessingGameParagraph.innerHTML = `You guessed the right number in ${guess} guesses!`;
@@ -72,3 +76,4 @@ function guessingGame() {
 }
 guessingGameButton.onclick = guessingGame;
 
+ 
