@@ -25,7 +25,7 @@ function startQuest() {
         gameHeader2.innerHTML = "Game Over";
         gameHeader2.style.color = "green";
         gameParagraph.innerHTML = `You chose the <strong>${game.choice3}</strong> door. You were cooked and eaten by the dragon!!`;
-        gameParagraph.style.backgroundColor = "darkgreen";
+        gameParagraph.style.backgroundColor = "green";
         gameParagraph.style.color = "red"
     }else if(game.choice3 === "green") {
         gameHeader2.innerHTML = "Game Over";
