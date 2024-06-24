@@ -84,6 +84,7 @@ function guessingGame() {
     //If the numbers are not different anymore and are equal to each other print out the html that the user won and how many guesses it took them
     if (number === getRandom) {
         guessingGameHeader.innerHTML = "You Won!!!";
+        numbersDisplay.innerHTML = `<strong>My Number: ${getRandom}</strong> Your Last Guess: ${number}`;
         guessingGameParagraph.innerHTML = `You guessed the right number in ${guess} guesses!`;
     }
 }
