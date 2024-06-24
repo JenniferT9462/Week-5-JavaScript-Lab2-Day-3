@@ -23,3 +23,33 @@ h1 {
 p {
     font-size: 24px;
 }
+
+#princessImg {
+    width: 200px;
+
+}
+#dragonImg {
+    width: 200px;
+}
+#image-container {
+    display: flex;
+    justify-content: center;
+
+}
+#adventureGameContainer {
+    border: solid 6px green;
+    border-radius: 40px;
+    box-shadow: 0 0 8px 2px;
+}
+#guessingGameContainer {
+    border: solid 6px green;
+    margin-top: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 8px 2px;
+}
+#questionMarksImg {
+    display: block;
+    margin: auto;
+    width: 400px;
+
+}
